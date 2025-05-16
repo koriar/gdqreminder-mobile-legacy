@@ -19,10 +19,6 @@ export default defineComponent({
       type: Object as () => { [pk: string]: GDQRunData },
       required: true,
     },
-    runners: {
-      type: Object as () => { [pk: string]: GDQRunnerDataFields },
-      required: true,
-    },
   },
   async setup(props) {
     const now = inject<DateProvider>("dateProvider")!.getCurrent();

@@ -1,6 +1,7 @@
 <script lang="ts">
 import { defineComponent, toRef } from "vue";
 import "@material/web/all.js";
+import { GDQEventData } from "@/interfaces/GDQEvent";
 export default defineComponent({
   props: {
     eventsByIDs: {
